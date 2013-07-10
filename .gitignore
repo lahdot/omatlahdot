@@ -16,3 +16,10 @@ tmp
 .yardoc
 _yardoc
 doc/
+/db/*.sqlite3
+
+# Ignore all logfiles and tempfiles.
+/log/*.log
+/tmp
+
+.DStore
