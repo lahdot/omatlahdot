@@ -1,4 +1,7 @@
 Omatlahdot::Application.routes.draw do
+  resources :reittiopas
+
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

@@ -1,0 +1,25 @@
+<h1>Listing reittiopas</h1>
+
+<table>
+  <tr>
+    <th>Query</th>
+    <th>Result</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @reittiopas.each do |reittiopa| %>
+  <tr>
+    <td><%= reittiopa.query %></td>
+    <td><%= reittiopa.result %></td>
+    <td><%= link_to 'Show', reittiopa %></td>
+    <td><%= link_to 'Edit', edit_reittiopa_path(reittiopa) %></td>
+    <td><%= link_to 'Destroy', reittiopa, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Reittiopa', new_reittiopa_path %>
