@@ -2,6 +2,9 @@ Omatlahdot::Application.routes.draw do
   resources :reittiopas
 
 
+  get '/route/:from/:to/:time/:day/:depart/:use_metro/:use_bus/:use_train/:number_of_results', to: 'reittiopas#route'
+  get '/stop/stop_id', to: 'reittiopas#stop'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
